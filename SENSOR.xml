@@ -1,5 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="controls_if" id="352" inline="false" x="1" y="99">
+    <mutation else="1"></mutation>
     <value name="IF0">
       <block type="logic_compare" id="375" inline="true">
         <field name="OP">LT</field>
@@ -16,6 +17,13 @@
       </block>
     </value>
     <statement name="DO0">
+      <block type="movement_forward" id="399">
+        <next>
+          <block type="oled_cleardisplay" id="419"></block>
+        </next>
+      </block>
+    </statement>
+    <statement name="ELSE">
       <block type="oled_drawtext" id="328">
         <field name="TEXT">Divya</field>
         <next>
