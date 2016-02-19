@@ -1,19 +1,38 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_drawtext" id="328" x="-3" y="89">
-    <field name="TEXT">Divya</field>
-    <next>
-      <block type="oled_setcursor" id="337" inline="true">
-        <value name="STARTX">
-          <block type="math_number" id="344">
-            <field name="NUM">10</field>
+  <block type="controls_if" id="352" inline="false" x="1" y="99">
+    <value name="IF0">
+      <block type="logic_compare" id="375" inline="true">
+        <field name="OP">LT</field>
+        <value name="A">
+          <block type="sensor_spectrometer" id="382">
+            <field name="LIGHT">BLUE</field>
           </block>
         </value>
-        <value name="STARTY">
-          <block type="math_number" id="345">
-            <field name="NUM">10</field>
+        <value name="B">
+          <block type="math_number" id="389">
+            <field name="NUM">80</field>
           </block>
         </value>
       </block>
-    </next>
+    </value>
+    <statement name="DO0">
+      <block type="oled_drawtext" id="328">
+        <field name="TEXT">Divya</field>
+        <next>
+          <block type="oled_setcursor" id="337" inline="true">
+            <value name="STARTX">
+              <block type="math_number" id="344">
+                <field name="NUM">10</field>
+              </block>
+            </value>
+            <value name="STARTY">
+              <block type="math_number" id="345">
+                <field name="NUM">10</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
   </block>
 </xml>
