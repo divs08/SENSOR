@@ -6,20 +6,10 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="controls_whileUntil" id="257" inline="false">
-        <field name="MODE">WHILE</field>
-        <value name="NUMBER">
-          <block type="sensor_object" id="273">
-            <field name="OBJECT">LEFTSIDE</field>
-          </block>
-        </value>
-        <statement name="DO">
-          <block type="movement_forward" id="145">
-            <next>
-              <block type="movement_left" id="156"></block>
-            </next>
-          </block>
-        </statement>
+      <block type="movement_forward" id="145">
+        <next>
+          <block type="movement_left" id="156"></block>
+        </next>
       </block>
     </statement>
   </block>
