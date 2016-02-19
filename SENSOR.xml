@@ -10,7 +10,7 @@
         <field name="MODE">WHILE</field>
         <value name="NUMBER">
           <block type="sensor_object" id="273">
-            <field name="OBJECT">REAR</field>
+            <field name="OBJECT">LEFTSIDE</field>
           </block>
         </value>
         <statement name="DO">
